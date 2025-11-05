@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Vania Ivonne Arévalo del Angel — Portafolio</title>
+<meta name="description" content="Portafolio profesional de Vania Ivonne Arévalo del Angel — estudiante de Ingeniería en Sistemas Computacionales. Descarga CV y conoce más sobre mí." />
+<style>
+  :root{
+    --bg:#e9f4ff;              /* fondo general más claro */
+    --card:#ffffff;            /* tarjetas blancas */
+    --accent:#3b82f6;          /* azul claro principal */
+    --muted:#5f6c80;
+    --radius:16px;
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{
+    background:linear-gradient(180deg,var(--bg),#cde6ff 140%);
+    color:#1e293b;
+    padding:32px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    min-height:100vh;
+  }
+
+  .wrap{
+    width:100%;
+    max-width:980px;
+    display:grid;
+    grid-template-columns: 320px 1fr;
+    gap:28px;
+  }
+
+  .card{
+    background:var(--card);
+    border-radius:var(--radius);
+    padding:24px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+    border:1px solid #e5eaf0;
+  }
+
+  .avatar{
+    width:100%;
+    height:200px;
+    border-radius:12px;
+    background:linear-gradient(135deg,#93c5fd,#3b82f6);
+    display:flex;
+    align-items:flex-end;
+    padding:16px;
+    color:#fff;
+    font-weight:600;
+  }
+
+  h1{ margin:16px 0 6px; font-size:22px; }
+  p.lead{ margin:0; color:var(--muted); font-size:14px; }
+
+  .btn{
+    display:inline-flex;
+    gap:8px;
+    align-items:center;
+    padding:10px 14px;
+    border-radius:10px;
+    background:transparent;
+    border:1px solid var(--accent);
+    color:var(--accent);
+    text-decoration:none;
+    font-weight:600;
+    transition:all .2s;
+  }
+
+  .btn:hover{
+    background:var(--accent);
+    color:white;
+  }
+
+  .btn.primary{
+    background:var(--accent);
+    color:white;
+    border:none;
+  }
+
+  .sidebar-list{ margin-top:18px; display:flex; flex-direction:column; gap:8px; }
+  .muted{ color:var(--muted); font-size:13px; }
+
+  .main{ display:flex; flex-direction:column; gap:18px; }
+  .section-title{ display:flex; justify-content:space-between; align-items:center; margin-bottom:8px; }
+  .chips{ display:flex; gap:8px; flex-wrap:wrap; }
+  .chip{
+    background:#f1f5f9;
+    padding:6px 10px;
+    border-radius:999px;
+    font-size:13px;
+    color:#475569;
+  }
+
+  footer{ margin-top:14px; color:var(--muted); font-size:13px; }
+
+  @media (max-width:900px){
+    .wrap{ grid-template-columns: 1fr; padding:0 8px; }
+    .avatar{ height:160px; }
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <!-- SIDEBAR -->
+    <aside class="card">
+      <div class="avatar" style="background-image:url('foto.jpg'); background-size:cover; background-position:center;">
+</div>
+
+      <h1>Vania Ivonne Arévalo del Angel</h1>
+      <p class="lead">
+        Estudiante del Instituto Politécnico Nacional con gran interés en el desarrollo tecnológico, la organización y el trabajo en equipo. En busca de una oportunidad para aplicar mis conocimientos en sistemas computacionales.
+      </p>
+
+      <div class="sidebar-list">
+        <div class="muted">
+          <strong>Contacto</strong><br>
+          📧 <a href="mailto:fashionvania31@gmail.com" style="color:var(--accent)">fashionvania31@gmail.com</a><br>
+          📱 5543920387<br>
+          📍 Ciudad de México, México<br>
+        </div>
+
+        <div class="muted">
+          <strong>Formación académica</strong><br>
+          Instituto Politécnico Nacional<br>
+          <small>Febrero 2022 – Actualidad</small><br><br>
+          Universidad Intercontinental (Preparatoria)<br>
+          <small>Agosto 2018 – Junio 2021</small>
+        </div>
+
+        <div style="margin-top:12px;">
+          <a class="btn primary" href="CV.pdf" download="CV-VaniaArevalo.pdf">⬇️ Descargar CV</a>
+          <a class="btn" href="CV.pdf" target="_blank">Ver CV</a>
+        </div>
+        <div>
+          <a class="btn primary" href="llave_publica.txt" download="llave_publica.txt">🔑 Llave pública</a>
+        </div>
+      </div>
+
+      
+
+      <div style="margin-top:16px;" class="muted">
+        <strong>Idiomas</strong>
+        <div class="chips" style="margin-top:8px;">
+          <span class="chip">Español (nativo)</span>
+          <span class="chip">Inglés (avanzado)</span>
+          <span class="chip">Italiano (intermedio)</span>
+        </div>
+      </div>
+
+      <footer>
+        <div>© 2025 Vania Ivonne Arévalo del Angel</div>
+      </footer>
+    </aside>
+
+    <!-- MAIN -->
+    <main class="main">
+      <section class="card">
+        <div class="section-title">
+          <h2>Perfil</h2>
+        </div>
+        <p>
+          Terminé mis estudios de preparatoria con gran interés de convertirme en ingeniera en sistemas computacionales. Soy una persona responsable, empática, organizada y con facilidad para resolver problemas. 
+          Busco una oportunidad laboral donde pueda aprender, aplicar y desarrollar mis habilidades técnicas y personales.
+        </p>
+      </section>
+
+      <section class="card">
+        <div class="section-title">
+          <h2>Experiencia laboral</h2>
+        </div>
+        <p>
+          <strong>Customer Service Agent</strong><br>
+          TTEC México S.A. de C.V. | 2021 – 2023<br>
+          Atención al cliente bilingüe (español / inglés), resolución de incidencias y manejo eficiente de información con orientación al usuario.
+        </p>
+      </section>
+
+      <section class="card">
+        <div class="section-title">
+          <h2>Aptitudes y habilidades</h2>
+        </div>
+        <div class="chips">
+          <span class="chip">Organización</span>
+          <span class="chip">Planificación</span>
+          <span class="chip">Trabajo en equipo</span>
+          <span class="chip">Empatía</span>
+          <span class="chip">Paciencia</span>
+          <span class="chip">Buena memoria</span>
+          <span class="chip">Resolución de problemas</span>
+        </div>
+      </section>
+
+      <section class="card">
+        <div class="section-title">
+          <h2>Intereses</h2>
+        </div>
+        <p>
+          Me apasiona aprender sobre tecnología, idiomas y trabajo en equipo. Disfruto practicar deportes, especialmente tenis y fútbol, actividades que también me ayudan a mantener disciplina y compromiso.
+        </p>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
